@@ -327,6 +327,13 @@ class Generic(object):
             except (ValueError):
                 pass
 
+    def test_firstn(self):
+        series = pd.Series(np.random.rand(10))
+        for n in (0, 1, 5, 9, 10):
+            h = series.head(n)
+            f = series.firstn(n)
+            assert_series_equal(h, f)
+
     def test_head_tail(self):
         # GH5370
 

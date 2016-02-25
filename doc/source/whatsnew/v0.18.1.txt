@@ -22,6 +22,8 @@ New features
 Enhancements
 ~~~~~~~~~~~~
 
+Add firstn
+
 
 .. _whatsnew_0181.api:
 

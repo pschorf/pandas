@@ -122,6 +122,7 @@ See the top & bottom rows of the frame
 .. ipython:: python
 
    df.head()
+   df.firstn()
    df.tail(3)
 
 Display the index, columns, and the underlying numpy data

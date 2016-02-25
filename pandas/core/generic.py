@@ -2361,6 +2361,9 @@ class NDFrame(PandasObject):
         """
         return self.iloc[:n]
 
+    def firstn(self, n=5):
+        return self.head(n)
+
     def tail(self, n=5):
         """
         Returns last n rows
